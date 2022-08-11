@@ -89,6 +89,7 @@
               <a href="{{ card_product.url }}" id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}">
                 {{ card_product.title | escape }}
               </a>
+<div data-tag="widereview-rate" data-widereview-rule="4-Dawn 3.0" data-widereview-rate="{{ card_product.metafields.widereview.rating }}" data-widereview-amount="{{ product_card_product.metafields.widereview.amount }}" widereview-rate-product-id="{{ product_card_product.id}}" class="widereview-rate"></div>
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
@@ -106,6 +107,7 @@
             <a href="{{ card_product.url }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
               {{ card_product.title | escape }}
             </a>
+<div data-tag="widereview-rate" data-widereview-rule="4-Dawn 3.0" data-widereview-rate="{{ card_product.metafields.widereview.rating }}" data-widereview-amount="{{ product_card_product.metafields.widereview.amount }}" widereview-rate-product-id="{{ product_card_product.id}}" class="widereview-rate"></div>
           </h3>
           <div class="card-information">
             {%- if show_vendor -%}
