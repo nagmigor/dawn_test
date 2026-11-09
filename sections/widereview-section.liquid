@@ -28,7 +28,7 @@
 		{% assign productId = 'disable' %}
 {%- endif -%}
 
-{% render 'widereview' with product_id: productId %}
+{% render 'widereview' with product_id, product_id: productId %}
 
 {% schema %}
 {
@@ -91,3 +91,13 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'widereview' with product_id: productId %}"
+  to: "{% render 'widereview' with product_id, product_id: productId %}"
+  position: 996..1060
+{% endcomment %}
