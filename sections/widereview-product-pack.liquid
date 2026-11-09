@@ -10,7 +10,7 @@
 {%- elsif value == 'home_page_reviews' -%}
   {% assign productId = 1 %}
 {%- endif -%}
-{% render 'widereview' with product_id: productId, type: 'pack' %}
+{% render 'widereview' with product_id, product_id: productId, type: 'pack' %}
 
 
 {% schema %}
@@ -63,3 +63,14 @@
   "templates": ["product"]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'widereview' with product_id: productId, type: 'pack' %}"
+  to: "{% render 'widereview' with product_id, product_id: productId, type: 'pack'
+    %}"
+  position: 429..507
+{% endcomment %}
